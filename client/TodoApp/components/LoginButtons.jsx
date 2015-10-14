@@ -6,7 +6,7 @@ import {passwordSignupFields} from '../modules/AccountsUi.jsx';
 
 import '../css/LoginButtons.import.less';
 
-let isValid = {
+const isValid = {
   password(password) {
     return password.length >= 6 || alert('Password must be at least 6 characters long');
   },
@@ -31,7 +31,7 @@ let isValid = {
 
 class LoginField extends Component {
   onValueChange(event) {
-    this.props.onChange(fieldName, event.target.value);
+    this.props.onChange(this.props.fieldName, event.target.value);
   }
 
   render() {
@@ -164,7 +164,7 @@ class LoginMenu extends Component {
       });
     }
 
-    if (option.indexOf('USERNAME_AND_OPTIONAL_EMAIL' > -1)) {
+    if (option.indexOf('USERNAME_AND_OPTIONAL_EMAIL') > -1) {
       fields.push({
         fieldName: 'email', fieldLabel: 'Email (optional)', fieldType: 'email'
       })

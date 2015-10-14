@@ -3,6 +3,6 @@ require('../server/todo-methods');
 
 require('./routes');
 
-//Accounts.ui.config({
-//  passwordSignupFields: 'USERNAME_ONLY'
-//});
+Accounts.ui.config({
+  passwordSignupFields: 'USERNAME_ONLY'
+});

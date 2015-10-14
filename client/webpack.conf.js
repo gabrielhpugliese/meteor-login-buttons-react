@@ -22,6 +22,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   entry: './entry',
+  devtool: 'source-map',
   externals: {
     // Add global variables you would like to import
     'react': 'React',

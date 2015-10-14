@@ -1,7 +1,5 @@
 import { Component, PropTypes } from 'react';
-import BlazeToReact from 'blaze-to-react';
-
-const LoginButtons = BlazeToReact('loginButtons');
+import LoginButtons from './LoginButtons.jsx';
 
 export default class TodoHeader extends Component {
   static propTypes = {
